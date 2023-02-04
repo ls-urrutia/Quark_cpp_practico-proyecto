@@ -63,7 +63,7 @@ int largo_lista(Cotizacion *lista){
 void imprimir_lista(Cotizacion *lista){
     Cotizacion *aux = lista;
     while (aux != NULL){
-        cout << "ID Cotizacion" << aux->get_id() << ":" << endl;
+        cout << "ID Cotizacion : "  << aux->get_id() << endl;
         cout << "Fecha & Hora: " << aux->get_datetime() << endl;
         cout << "Codigo Vendedor: " << v_codigo << endl;
         cout << "Prenda: " << aux->get_prenda()->get_nombre() << endl;
@@ -481,8 +481,17 @@ void menu(){
                 
                 lista_cotizaciones = insertar_elemento(lista_cotizaciones, nueva_cotizacion);
 
-                cout << endl << endl << "Cotizacion agregada con exito." << endl;
+                cout << "Cotizacion agregada con exito." << endl;
                 cout << "-"<< endl;
+                cout << "----------------------------------------------"<< endl;
+                cout << "ID Cotizacion : " << nueva_cotizacion->get_id()<< endl;
+                cout << "Fecha & Hora : " << nueva_cotizacion->get_datetime() << endl;
+                cout << "Codigo Vendedor : " << v_codigo << endl;
+                cout << "Prenda : " << nueva_prenda->get_nombre() << endl;
+                cout << "Precio unitario : $" << nueva_prenda->get_precio_u()<< endl;
+                cout << "Cantidad de unidades cotizadas : " << nueva_cotizacion->get_unidades_cot()<< endl;
+                cout << "Precio total : $" << nueva_cotizacion->get_total_cot() << endl;
+                cout << endl << endl << "-"<< endl;
             }
             system("pause");
         }
