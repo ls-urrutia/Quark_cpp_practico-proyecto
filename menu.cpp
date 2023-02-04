@@ -435,7 +435,7 @@ void menu(){
             
             desc_final = total_cotizacion = cantidad_cotizacion * precio_unitario;
 
-            if(nueva_prenda->get_tipo() == "pantalon_chupin_standard"){
+            if(nueva_prenda->get_seccion() == "chupin"){
                 desc_final = total_cotizacion -  (total_cotizacion * 0.12);
             }                         
            
