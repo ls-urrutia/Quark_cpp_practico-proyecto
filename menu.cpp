@@ -68,7 +68,7 @@ void imprimir_lista(Cotizacion *lista){
         cout << "Codigo Vendedor: " << v_codigo << endl;
         cout << "Prenda: " << aux->get_prenda()->get_nombre() << endl;
         cout << "Precio unitario: $" << aux->get_prenda()->get_precio_u()<< endl;
-        cout << "Cantidad de unidades cotizadas: $" << aux->get_unidades_cot()<< endl;
+        cout << "Cantidad de unidades cotizadas: " << aux->get_unidades_cot()<< endl;
         cout << "Precio total: $" << aux->get_total_cot() << endl << endl;
         aux = aux->next;
     }
